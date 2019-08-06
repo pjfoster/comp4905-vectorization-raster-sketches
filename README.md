@@ -18,12 +18,19 @@ The code is written as a series of Python 2.7 scripts, using OpenCV and the NumP
 The program can be run from any Python IDE or console. The name of the image to be vectorized must be hardcoded into the main.py file. This is definitely not ideal, but it sufficed for the purpose of this project. 
 
 Steps include:
+
 	. Pre-processing with Gaussian filtering to remove noise
+	
 	. Clustering pixels, using Sobel X and Y gradients to determine the direction of the centreline
+	
 	. Transforming the clustered pixels into a graph, and pruning it into a MST with Kruskal's algorithm
+	
 	. Seperating pixels into distinct components based on the location of endpoints and junctions
+	
 	. Corners / interest points can also be used to make the seperation process more accurate
+	
 	. Iteratively smoothing individual curves with a Gaussian smoothing operator
+	
 	. Fitting curves to each distinct component using MATLAB's curb fitting library
 
 The detailed project report is included in the Documentation folder and contains a detailed explanation of the algorithms used and a assessment of their efficiency and accuracy. 
