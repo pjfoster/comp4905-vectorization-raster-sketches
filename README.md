@@ -27,10 +27,10 @@ Steps include:
 	
 	. Seperating pixels into distinct components based on the location of endpoints and junctions
 	
-	. Corners / interest points can also be used to make the seperation process more accurate
+	. Using corners / interest points to make the seperation process more accurate
 	
 	. Iteratively smoothing individual curves with a Gaussian smoothing operator
 	
-	. Fitting curves to each distinct component using MATLAB's curb fitting library
+	. Fitting curves to each seperate point set using MATLAB's curb fitting library
 
-The detailed project report is included in the Documentation folder and contains a detailed explanation of the algorithms used and a assessment of their efficiency and accuracy. 
+The detailed project report is included in the Documentation folder and contains a detailed explanation of the algorithms used and an assessment of their efficiency and accuracy. 
